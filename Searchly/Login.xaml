@@ -1,0 +1,24 @@
+﻿<Page x:Class="Searchly.Login"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Searchly"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1000" MinHeight="500" MaxHeight="500" MinWidth="1000" MaxWidth="1000"
+      Title="Login" Background="White">
+
+    <StackPanel Orientation="Vertical">
+        <Label Content="      Searchly&#10;'Ayna Ashya2y'" FontWeight="Bold" FontSize="20" Margin="0,50,0,0" FontStyle="Italic"
+               BorderThickness="2" BorderBrush="Black" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Content="Email" Margin="365,0,560,0"/>
+        <TextBox BorderThickness="4" BorderBrush="DarkViolet"  Margin="365,0" Name="EmailTextBox"/>
+        <Label Content="Password" Margin="365,0"/>
+        <PasswordBox BorderThickness="4" BorderBrush="DarkViolet" Margin="365,0" Name="PasswordTextBox"/>
+        <Button Content="Login" Margin="430,0,430,0" Click="LoginButtonClicked" />
+        <StackPanel Orientation="Horizontal" Margin="365,0" HorizontalAlignment="Center">
+            <Label Content="New User?"/>
+            <Button Content="SignUp" Click="SignUpClicked"/>
+        </StackPanel>
+    </StackPanel>
+</Page>
