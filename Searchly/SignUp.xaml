@@ -1,0 +1,56 @@
+﻿<Page x:Class="Searchly.SignUp"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Searchly"
+      mc:Ignorable="d" 
+      d:DesignHeight="500" d:DesignWidth="1000" MinHeight="500" MaxHeight="500" MinWidth="1000" MaxWidth="1000"
+      Title="SignUp" Background="White">
+
+    <StackPanel>
+        <Label Content="      Searchly&#10;'Ayna Ashya2y'" FontWeight="Bold" FontSize="20" Margin="365,50,365,0" FontStyle="Italic"
+               BorderThickness="2" BorderBrush="Black" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+        <StackPanel Orientation="Horizontal" Margin="200,0,200,0">
+            <StackPanel Width="300">
+                <Label Content="First Name"/>
+                <TextBox BorderThickness="3" BorderBrush="DarkViolet" Name="FirstNameTextBox"/>
+            </StackPanel>
+            <StackPanel Width="300">
+                <Label Content="Last Name"/>
+                <TextBox BorderThickness="3" BorderBrush="DarkViolet" Name="LastNameTextBox"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="200,0,200,0">
+            <StackPanel Width="300">
+                <Label Content="Email"/>
+                <TextBox BorderThickness="3" BorderBrush="DarkViolet" Name="EmailTextBox"/>
+            </StackPanel>
+            <StackPanel Width="300">
+                <Label Content="Mobile Number"/>
+                <TextBox BorderThickness="3" BorderBrush="DarkViolet" Name="MobileNumberTextBox" MaxLength="11"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="200,0,200,0">
+            <StackPanel Width="300">
+                <Label Content="Age"/>
+                <TextBox BorderThickness="3" BorderBrush="DarkViolet" Name="AgeTextBox"/>
+            </StackPanel>
+            <StackPanel Width="300">
+                <Label Content="Gender (Enter M or F)"/>
+                <TextBox BorderThickness="3" BorderBrush="DarkViolet" Name="GenderTextBox" MaxLength="1"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="200,0,200,0">
+            <StackPanel Width="300">
+                <Label Content="Password"/>
+                <PasswordBox BorderThickness="3" BorderBrush="DarkViolet" Name="PasswordTextBox"/>
+            </StackPanel>
+            <StackPanel Width="300">
+                <Label Content="Confirm Password"/>
+                <PasswordBox BorderThickness="3" BorderBrush="DarkViolet" Name="ConfirmPasswordTextBox"/>
+            </StackPanel>
+        </StackPanel>
+        <Button Content="SignUp" Margin="400,20,400,0" Click="SignUpClicked"/>
+    </StackPanel>
+</Page>
