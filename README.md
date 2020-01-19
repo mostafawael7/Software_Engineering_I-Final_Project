@@ -1,1 +1,1 @@
-# Software Engineering I - Final Project
+This is a final project for Software Engineering I Course. The project is written in C#(WPF) and using SQL Server. It is a way to find the lost things from any person. If I lost my wallet for example, I'd post it on this app. Then if anyone found it, he/she can contact me and give it back to me. 
